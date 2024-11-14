@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diffie-Hellman Shifrlash va Deshifrlash</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Diffie-Hellman Shifrlash va Deshifrlash</h2>
+    <div class="input-group">
+      <label for="p">Bosh son (p):</label>
+      <input type="number" id="p" placeholder="p qiymatini kiriting">
+    </div>
+    <div class="input-group">
+      <label for="g">Son (g):</label>
+      <input type="number" id="g" placeholder="g qiymatini kiriting">
+    </div>
+    <div class="input-group">
+      <label for="a">Alice uchun maxfiy son (a):</label>
+      <input type="number" id="a" placeholder="a qiymatini kiriting">
+    </div>
+    <div class="input-group">
+      <label for="b">Bob uchun maxfiy son (b):</label>
+      <input type="number" id="b" placeholder="b qiymatini kiriting">
+    </div>
+    <div class="input-group">
+      <label for="message">Shifrlanadigan matn:</label>
+      <input type="text" id="message" placeholder="Matn kiriting">
+    </div>
+    <button onclick="processEncryption()">Shifrlash va Deshifrlash</button>
+    <div class="output-group">
+      <p>Original Matn: <span id="originalText"></span></p>
+      <p>Shifrlangan Matn: <span id="encryptedText"></span></p>
+      <p>Deshifrlangan Matn: <span id="decryptedText"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
